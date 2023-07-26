@@ -1,0 +1,65 @@
+/* CSS for the Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #459fff;
+    color: white;
+  }
+  
+  /* CSS for the logo*/
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 100px;
+    margin-right: 1rem;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  /* CSS for the links*/
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 1rem;
+  }
+  
+  .nav-links li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #0056b3;
+  }
+  
+  .nav-button:hover {
+    background-color: #0056b3;
+  }
+  

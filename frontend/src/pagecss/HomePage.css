@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.side-panel {
+  padding: 20px;
+  background-color: #f1f1f1;
+  min-width: 200px; /* Added a minimum width to the side panel */
+  flex: 0 0 200px; /* Set a fixed width of 200px for the side panel */
+}
+
+.side-panel h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.side-panel ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.side-panel li {
+  margin-bottom: 5px;
+}
+
+.content-wrapper {
+  flex: 1; /* Allow the content to take up remaining space */
+  padding: 20px;
+}
+
+.venue-info {
+  text-align: center;
+  margin: 20px;
+}
+
+.centered {
+  text-align: justify;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eeeeee;
+}
+
+.event-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Center the contents horizontally */
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery-button {
+  display: block;
+  margin: 10px auto; /* Center the button horizontally */
+  padding: 10px 20px;
+  background-color: #459fff;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-button:hover {
+  background-color: #ddd;
+}
+
+.event .read-more-button {
+  display: inline-block;
+  background-color: #459fff;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.event .read-more-button:hover {
+  background-color: #459fff;
+}
+
+/* Add media queries for responsive layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side-panel {
+    min-width: 150px; 
+    flex: 0 0 150px; 
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(1, 1fr); /* Change to a single column grid layout */
+  }
+
+  /* Center the event details text in a single column */
+  .event p {
+    text-align: center;
+  }
+}
+
+/* For screens with a minimum width of 769px (larger devices) */
+@media (min-width: 769px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show two events side by side */
+  }
+}
+
+/* For screens with a minimum width of 1024px (even larger devices) */
+@media (min-width: 1024px) {
+  .event-grid {
+    grid-template-columns: repeat(3, 1fr); /* Show three events side by side */
+  }
+}
