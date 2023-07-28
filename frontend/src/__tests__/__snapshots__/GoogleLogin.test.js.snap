@@ -9,6 +9,6 @@ exports[`renders correctly 1`] = `
     alt="Google Icon"
     src="/images/google-icon.jpg"
   />
-   Sign in with Google
+  Sign in with Google
 </button>
 `;
