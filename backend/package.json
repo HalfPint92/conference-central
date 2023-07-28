@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "test": "jest --detectOpenHandles",
     "vercel-build": "npm run build"
   },
   "author": "Aaron",
